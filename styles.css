@@ -255,6 +255,12 @@ a:hover { color: #e8c98a; }
   align-items: center;
   justify-content: center;
 }
+.service-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .photo-placeholder-icon {
   font-size: 40px;
   color: rgba(212, 175, 106, .4);
@@ -351,6 +357,13 @@ a:hover { color: #e8c98a; }
 }
 
 .fdv-svg-badge { width: 62%; height: 62%; opacity: .5; }
+
+.badge-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
 .badge-card {
   background: rgba(246, 239, 250, .05);
