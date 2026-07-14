@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Casa Terapêutica Flor da Vida · Terapias Holísticas em Uruguaiana/RS</title>
+  <meta property="og:title" content="Casa Terapêutica Flor da Vida">
+  <meta property="og:description" content="Espaço de Desenvolvimento e Cura da Mente e Corpo. Reiki, Ayurveda &amp; Yoga, Biorressonância e mais, em Uruguaiana/RS. Agende pelo WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #1d1133; color: #efe7f5; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: #d4af6a; text-decoration: none; }
+    a:hover { color: #e8c98a; }
+    @keyframes fdvSpin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes fdvPulse { 0%,100% { opacity: .55; } 50% { opacity: .9; } }
+  </style>
+</helmet>
+
+<div style="overflow-x:hidden; background:linear-gradient(175deg,#2d1b4e 0%,#3a1f56 40%,#4c2260 70%,#2a1440 100%); min-height:100vh; position:relative">
+
+  <!-- ============ HERO ============ -->
+  <header data-screen-label="Hero" data-reveal="" style="position:relative; min-height:92vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:96px 24px 72px; overflow:hidden">
+    <div style="position:absolute; top:50%; left:50%; width:min(160vw,900px); height:min(160vw,900px); transform:translate(-50%,-50%); opacity:.12; pointer-events:none">{{ flowerHero }}</div>
+    <div style="position:absolute; inset:0; background:radial-gradient(ellipse at 50% 30%, rgba(168,61,143,.28) 0%, rgba(45,27,78,0) 60%); pointer-events:none"></div>
+    <div style="position:relative; display:flex; flex-direction:column; align-items:center; gap:20px; max-width:720px">
+      <div style="font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:#d4af6a; font-weight:500">Terapias holísticas &amp; energéticas · Uruguaiana/RS</div>
+      <h1 style="font-family:'Playfair Display',serif; font-weight:600; font-size:clamp(38px,8vw,68px); line-height:1.08; margin:0; color:#f6effa">Casa Terapêutica<br><em style="color:#d4af6a; font-style:italic">Flor da Vida</em></h1>
+      <p style="font-size:clamp(16px,2.4vw,20px); line-height:1.6; color:#cfc0dd; margin:0; max-width:520px; font-weight:300">Espaço de Desenvolvimento e Cura da Mente e Corpo</p>
+      <div style="display:flex; gap:14px; flex-wrap:wrap; justify-content:center; margin-top:12px">
+        <a href="{{ waHero }}" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:10px; background:linear-gradient(135deg,#d4af6a,#c39a4f); color:#2d1b4e; font-weight:600; font-size:16px; padding:16px 30px; border-radius:999px; box-shadow:0 8px 28px rgba(212,175,106,.35)" style-hover="transform:translateY(-2px); box-shadow:0 12px 34px rgba(212,175,106,.5); color:#2d1b4e">
+          <span style="font-size:19px">✆</span> Agendar pelo WhatsApp
+        </a>
+        <a href="#terapias" style="display:inline-flex; align-items:center; padding:16px 26px; border-radius:999px; border:1px solid rgba(212,175,106,.45); color:#e8d9c0; font-size:16px" style-hover="border-color:#d4af6a; color:#d4af6a">Conhecer as terapias</a>
+      </div>
+    </div>
+    <div style="position:absolute; bottom:28px; left:50%; transform:translateX(-50%); color:#8f7aa8; font-size:22px; animation:fdvPulse 2.6s ease-in-out infinite">↓</div>
+  </header>
+
+  <!-- ============ SOBRE ============ -->
+  <section data-screen-label="Sobre" data-reveal="" style="position:relative; padding:88px 24px; overflow:hidden">
+    <div style="position:absolute; top:-120px; right:-180px; width:520px; height:520px; opacity:.08; pointer-events:none">{{ flowerAbout }}</div>
+    <div style="max-width:760px; margin:0 auto; text-align:center; position:relative">
+      <div style="font-size:12px; letter-spacing:.3em; text-transform:uppercase; color:#d4af6a; margin-bottom:14px">Sobre a casa</div>
+      <h2 style="font-family:'Playfair Display',serif; font-size:clamp(28px,5vw,42px); font-weight:600; margin:0 0 22px; color:#f6effa; line-height:1.2">Um espaço dedicado ao cuidado integral</h2>
+      <p style="font-size:17px; line-height:1.85; color:#cfc0dd; font-weight:300; margin:0 0 18px">A Casa Terapêutica Flor da Vida nasceu para acolher quem busca equilíbrio entre mente, corpo e energia. Aqui, cada pessoa é recebida com escuta, presença e um plano terapêutico pensado para o seu momento de vida.</p>
+      <p style="font-size:17px; line-height:1.85; color:#cfc0dd; font-weight:300; margin:0"><em style="color:#d4af6a; font-family:'Playfair Display',serif; font-size:19px">Cuidando desde a infância até a maturidade</em> — atendemos públicos de todas as idades, em sessões individuais e em grupo.</p>
+    </div>
+  </section>
+
+  <!-- ============ TERAPIAS ============ -->
+  <section id="terapias" data-screen-label="Terapias" style="padding:72px 24px 96px">
+    <div style="max-width:1080px; margin:0 auto">
+      <div data-reveal="" style="text-align:center; margin-bottom:44px">
+        <div style="font-size:12px; letter-spacing:.3em; text-transform:uppercase; color:#d4af6a; margin-bottom:14px">Terapias &amp; serviços</div>
+        <h2 style="font-family:'Playfair Display',serif; font-size:clamp(28px,5vw,42px); font-weight:600; margin:0; color:#f6effa">Caminhos para o seu equilíbrio</h2>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:20px">
+        <sc-for list="{{ services }}" as="svc" hint-placeholder-count="5">
+          <div data-reveal="" data-tilt="" onMouseMove="{{ tiltMove }}" onMouseLeave="{{ tiltLeave }}" style="position:relative; border-radius:18px; overflow:hidden; min-height:340px; display:flex; flex-direction:column; background:{{ svc.bg }}; border:1px solid rgba(212,175,106,.18); transition:transform .18s ease, box-shadow .25s ease; will-change:transform">
+            <div style="position:relative; height:150px; flex-shrink:0">
+              <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="{{ svc.slotId }}" shape="rect" fit="cover" placeholder="Clique ou arraste a foto" hint-size="100%,150px"></x-import>
+              <div style="position:absolute; left:0; right:0; bottom:0; height:60px; background:linear-gradient(to bottom, transparent, {{ svc.fade }}); pointer-events:none"></div>
+            </div>
+            <div style="position:relative; display:flex; flex-direction:column; gap:10px; padding:16px 24px 28px; flex:1; justify-content:flex-end">
+              <div style="position:absolute; inset:0; background:radial-gradient(ellipse at 80% 0%, rgba(212,175,106,.14), transparent 55%); pointer-events:none"></div>
+              <div style="font-size:30px; line-height:1; color:#d4af6a">{{ svc.icon }}</div>
+              <h3 style="font-family:'Playfair Display',serif; font-size:23px; font-weight:600; margin:0; color:#f6effa">{{ svc.name }}</h3>
+              <p style="font-size:14.5px; line-height:1.6; color:#cfc0dd; margin:0; font-weight:300">{{ svc.desc }}</p>
+              <a href="{{ svc.wa }}" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; margin-top:8px; color:#d4af6a; font-size:14px; font-weight:500" style-hover="color:#e8c98a">✆ Agendar {{ svc.short }} →</a>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BADGE GOOGLE ============ -->
+  <section data-screen-label="Avaliações Google" data-reveal="" style="padding:0 24px 88px">
+    <div style="max-width:920px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:36px; align-items:center">
+      <div style="display:flex; justify-content:center">
+        <div style="width:min(100%,340px); border:1px solid rgba(212,175,106,.55); border-radius:999px 999px 26px 26px; padding:12px">
+          <div style="border-radius:999px 999px 18px 18px; overflow:hidden; height:400px">
+            <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="foto-badge" shape="rect" fit="cover" placeholder="Clique ou arraste sua foto aqui" hint-size="100%,400px"></x-import>
+          </div>
+        </div>
+      </div>
+      <div style="background:rgba(246,239,250,.05); border:1px solid rgba(212,175,106,.3); border-radius:22px; padding:36px 28px; text-align:center; backdrop-filter:blur(6px)">
+      <div style="display:flex; align-items:center; justify-content:center; gap:14px; flex-wrap:wrap">
+        <span style="font-family:'Playfair Display',serif; font-size:52px; font-weight:700; color:#d4af6a; line-height:1">5,0</span>
+        <div style="display:flex; flex-direction:column; align-items:flex-start; gap:4px">
+          <div style="color:#d4af6a; font-size:20px; letter-spacing:3px">★★★★★</div>
+          <div style="font-size:13px; color:#cfc0dd">5 avaliações no Google</div>
+        </div>
+      </div>
+      <div style="display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-top:20px">
+        <span style="font-size:12.5px; padding:7px 14px; border-radius:999px; border:1px solid rgba(212,175,106,.4); color:#e8d9c0">🏳️‍🌈 Empresa LGBTQ+ friendly</span>
+        <span style="font-size:12.5px; padding:7px 14px; border-radius:999px; border:1px solid rgba(212,175,106,.4); color:#e8d9c0">♀ Liderada por mulheres</span>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMO FUNCIONA ============ -->
+  <section data-screen-label="Como funciona" style="padding:0 24px 96px">
+    <div style="max-width:900px; margin:0 auto">
+      <div data-reveal="" style="text-align:center; margin-bottom:40px">
+        <div style="font-size:12px; letter-spacing:.3em; text-transform:uppercase; color:#d4af6a; margin-bottom:14px">Como funciona</div>
+        <h2 style="font-family:'Playfair Display',serif; font-size:clamp(28px,5vw,40px); font-weight:600; margin:0; color:#f6effa">Seu caminho começa em três passos</h2>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px">
+        <sc-for list="{{ steps }}" as="st" hint-placeholder-count="3">
+          <div data-reveal="" style="text-align:center; padding:30px 22px; border-radius:18px; background:rgba(246,239,250,.04); border:1px solid rgba(212,175,106,.15)">
+            <div style="width:52px; height:52px; margin:0 auto 16px; border-radius:50%; border:1px solid #d4af6a; display:flex; align-items:center; justify-content:center; font-family:'Playfair Display',serif; font-size:22px; color:#d4af6a">{{ st.n }}</div>
+            <h3 style="font-family:'Playfair Display',serif; font-size:19px; font-weight:600; margin:0 0 8px; color:#f6effa">{{ st.title }}</h3>
+            <p style="font-size:14px; line-height:1.6; color:#cfc0dd; margin:0; font-weight:300">{{ st.desc }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DEPOIMENTOS ============ -->
+  <section data-screen-label="Depoimentos" style="padding:0 24px 96px">
+    <div style="max-width:980px; margin:0 auto">
+      <div data-reveal="" style="text-align:center; margin-bottom:40px">
+        <div style="font-size:12px; letter-spacing:.3em; text-transform:uppercase; color:#d4af6a; margin-bottom:14px">Depoimentos</div>
+        <h2 style="font-family:'Playfair Display',serif; font-size:clamp(28px,5vw,40px); font-weight:600; margin:0; color:#f6effa">Quem já viveu a experiência</h2>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px">
+        <sc-for list="{{ reviews }}" as="rv" hint-placeholder-count="3">
+          <figure data-reveal="" style="margin:0; padding:30px 26px; border-radius:18px; background:rgba(246,239,250,.04); border:1px solid rgba(212,175,106,.15); display:flex; flex-direction:column; gap:14px">
+            <div style="color:#d4af6a; font-size:15px; letter-spacing:2px">★★★★★</div>
+            <blockquote style="margin:0; font-family:'Playfair Display',serif; font-style:italic; font-size:19px; line-height:1.5; color:#f0e7f7">“{{ rv.text }}”</blockquote>
+            <figcaption style="font-size:13.5px; color:#b9a6cc">— {{ rv.name }} · avaliação no Google</figcaption>
+          </figure>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section data-screen-label="FAQ" style="padding:0 24px 96px">
+    <div style="max-width:720px; margin:0 auto">
+      <div data-reveal="" style="text-align:center; margin-bottom:36px">
+        <div style="font-size:12px; letter-spacing:.3em; text-transform:uppercase; color:#d4af6a; margin-bottom:14px">Dúvidas frequentes</div>
+        <h2 style="font-family:'Playfair Display',serif; font-size:clamp(28px,5vw,40px); font-weight:600; margin:0; color:#f6effa">Para quem nunca fez terapia holística</h2>
+      </div>
+      <div data-reveal="" style="display:flex; flex-direction:column; gap:10px">
+        <sc-for list="{{ faqs }}" as="fq" hint-placeholder-count="5">
+          <div style="border:1px solid rgba(212,175,106,.2); border-radius:14px; background:rgba(246,239,250,.03); overflow:hidden">
+            <button onClick="{{ fq.toggle }}" style="width:100%; display:flex; justify-content:space-between; align-items:center; gap:16px; padding:18px 20px; background:none; border:none; cursor:pointer; text-align:left; color:#f0e7f7; font-family:'Inter',sans-serif; font-size:15.5px; font-weight:500" style-hover="color:#d4af6a">
+              <span>{{ fq.q }}</span>
+              <span style="color:#d4af6a; font-size:18px; flex-shrink:0">{{ fq.mark }}</span>
+            </button>
+            <sc-if value="{{ fq.open }}" hint-placeholder-val="{{ false }}">
+              <div style="padding:0 20px 20px; font-size:14.5px; line-height:1.7; color:#cfc0dd; font-weight:300">{{ fq.a }}</div>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LOCALIZAÇÃO ============ -->
+  <section data-screen-label="Localização" data-reveal="" style="padding:0 24px 96px">
+    <div style="max-width:980px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:24px; align-items:center">
+      <div>
+        <div style="font-size:12px; letter-spacing:.3em; text-transform:uppercase; color:#d4af6a; margin-bottom:14px">Onde estamos</div>
+        <h2 style="font-family:'Playfair Display',serif; font-size:clamp(26px,4.5vw,38px); font-weight:600; margin:0 0 16px; color:#f6effa">Venha nos visitar</h2>
+        <p style="font-size:16px; line-height:1.7; color:#cfc0dd; font-weight:300; margin:0 0 20px">R. Domingos de Almeida, 2390<br>Centro · Uruguaiana/RS</p>
+        <a href="{{ waHero }}" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; color:#d4af6a; font-weight:500; font-size:15px" style-hover="color:#e8c98a">✆ (55) 99207-3534 — WhatsApp →</a>
+      </div>
+      <div style="border-radius:18px; overflow:hidden; border:1px solid rgba(212,175,106,.25); min-height:300px">
+        <iframe src="https://www.google.com/maps?q=R.+Domingos+de+Almeida,+2390,+Centro,+Uruguaiana,+RS&amp;output=embed" style="width:100%; height:300px; border:0; display:block; filter:saturate(.85)" loading="lazy" title="Mapa — Casa Terapêutica Flor da Vida"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RODAPÉ ============ -->
+  <footer data-screen-label="Rodapé" style="border-top:1px solid rgba(212,175,106,.2); padding:44px 24px 110px; text-align:center; background:rgba(20,10,38,.5)">
+    <div style="font-family:'Playfair Display',serif; font-size:22px; color:#f6effa; margin-bottom:6px">Casa Terapêutica <em style="color:#d4af6a">Flor da Vida</em></div>
+    <div style="font-size:13.5px; color:#b9a6cc; margin-bottom:18px">R. Domingos de Almeida, 2390 · Centro · Uruguaiana/RS</div>
+    <div style="display:flex; gap:18px; justify-content:center; flex-wrap:wrap; font-size:14.5px">
+      <a href="{{ waHero }}" target="_blank" rel="noopener" style-hover="color:#e8c98a">✆ WhatsApp (55) 99207-3534</a>
+      <a href="https://instagram.com/casaterapeuticaflordavida" target="_blank" rel="noopener" style-hover="color:#e8c98a">◎ @casaterapeuticaflordavida</a>
+    </div>
+    <div style="font-size:12px; color:#7d6a94; margin-top:24px">© 2026 Casa Terapêutica Flor da Vida</div>
+  </footer>
+
+  <!-- ============ WHATSAPP FLUTUANTE ============ -->
+  <sc-if value="{{ showFloat }}" hint-placeholder-val="{{ true }}">
+    <a href="{{ waHero }}" target="_blank" rel="noopener" aria-label="Falar no WhatsApp" style="position:fixed; right:20px; bottom:20px; z-index:50; width:58px; height:58px; border-radius:50%; background:#25d366; display:flex; align-items:center; justify-content:center; box-shadow:0 6px 20px rgba(0,0,0,.35); transition:transform .15s ease" style-hover="transform:scale(1.08)"><svg viewBox="0 0 32 32" width="32" height="32" fill="#fff"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.5.8 4.9 2.2 6.9L4.5 27.5c-.2.6.4 1.2 1 1l5.9-1.6c1.9 1 4 1.6 6.2 1.6 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm0 21.8c-2 0-3.9-.6-5.5-1.6l-.4-.2-3.6 1 1-3.4-.3-.4c-1.3-1.7-2-3.8-2-6 0-5.4 4.4-9.8 9.8-9.8s9.8 4.4 9.8 9.8-4.4 9.8-9.8 9.8zm5.4-7.3c-.3-.1-1.7-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1c-.3-.1-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.6-2.1s0-.4.1-.6c.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5s0-.4 0-.5-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.5 1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5 4.5.7.3 1.2.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4s.2-1.2.2-1.4c-.1-.1-.3-.2-.4-.4z"></path></svg></a>
+  </sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;showFloatingWhatsApp&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Comportamento&quot; },
+  &quot;flowerSpeed&quot;: { &quot;editor&quot;: &quot;range&quot;, &quot;default&quot;: 90, &quot;min&quot;: 20, &quot;max&quot;: 240, &quot;step&quot;: 10, &quot;unit&quot;: &quot;s&quot;, &quot;tsType&quot;: &quot;number&quot;, &quot;section&quot;: &quot;Animação&quot; }
+}">
+class Component extends DCLogic {
+  state = { openFaq: 0 };
+
+  componentDidMount() {
+    // Scroll reveal: fade-in + rise, staggered
+    const els = Array.from(document.querySelectorAll('[data-reveal]'));
+    els.forEach((el) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(26px)';
+      el.style.transition = 'opacity .7s ease, transform .7s ease';
+    });
+    const seen = new WeakSet();
+    this._io = new IntersectionObserver((entries) => {
+      let stagger = 0;
+      entries.forEach((en) => {
+        if (en.isIntersecting && !seen.has(en.target)) {
+          seen.add(en.target);
+          const el = en.target;
+          setTimeout(() => {
+            el.style.opacity = '1';
+            el.style.transform = 'translateY(0)';
+          }, stagger);
+          stagger += 110;
+          this._io.unobserve(el);
+        }
+      });
+    }, { threshold: 0.12 });
+    els.forEach((el) => this._io.observe(el));
+  }
+
+  componentWillUnmount() {
+    if (this._io) this._io.disconnect();
+  }
+
+  flower(id) {
+    // Flower of Life: 19 overlapping circles on a hex lattice
+    const r = 60, cx = 200, cy = 200;
+    const pts = [[0, 0]];
+    for (let k = 0; k < 6; k++) {
+      const a1 = (Math.PI / 3) * k;
+      pts.push([Math.cos(a1) * r, Math.sin(a1) * r]);
+      pts.push([Math.cos(a1) * 2 * r, Math.sin(a1) * 2 * r]);
+      const a2 = a1 + Math.PI / 6;
+      pts.push([Math.cos(a2) * r * Math.sqrt(3), Math.sin(a2) * r * Math.sqrt(3)]);
+    }
+    const dur = this.props.flowerSpeed ?? 90;
+    const circles = pts.map((p, i) =>
+      React.createElement('circle', { key: i, cx: cx + p[0], cy: cy + p[1], r, fill: 'none', stroke: '#d4af6a', strokeWidth: 1 })
+    );
+    circles.push(React.createElement('circle', { key: 'outer', cx, cy, r: r * 3, fill: 'none', stroke: '#d4af6a', strokeWidth: 1.4 }));
+    return React.createElement('svg', {
+      key: id, viewBox: '0 0 400 400', width: '100%', height: '100%',
+      style: { animation: 'fdvSpin ' + dur + 's linear infinite', display: 'block' }
+    }, circles);
+  }
+
+  renderVals() {
+    const phone = '5555992073534';
+    const wa = (msg) => 'https://wa.me/' + phone + '?text=' + encodeURIComponent(msg);
+    const cardBg = (a, b) =>
+      'linear-gradient(160deg,' + a + ' 0%,' + b + ' 100%)';
+
+    const slotIds = ['foto-reiki', 'foto-grupo', 'foto-ayurveda', 'foto-acompanhamento', 'foto-biorressonancia'];
+    const fades = ['#3a1f56', '#4c2260', '#2d1b4e', '#41205a', '#361d52'];
+    const services = [
+      { name: 'Reiki', short: 'Reiki', icon: '✻',
+        desc: 'Terapia energética de imposição de mãos que promove relaxamento profundo e equilíbrio dos centros de energia.',
+        bg: cardBg('#3a1f56', '#6b2d6b'), wa: wa('Olá! Gostaria de agendar uma sessão de Reiki na Casa Terapêutica Flor da Vida.') },
+      { name: 'Terapia em Grupo', short: 'Terapia em Grupo', icon: '❋',
+        desc: 'Encontros coletivos de partilha e cura, em um ambiente seguro e acolhedor para todas as idades.',
+        bg: cardBg('#4c2260', '#8a3480'), wa: wa('Olá! Quero saber mais sobre a Terapia em Grupo na Casa Terapêutica Flor da Vida.') },
+      { name: 'Ayurveda & Yoga', short: 'Ayurveda & Yoga', icon: '☾',
+        desc: 'Práticas milenares que integram corpo, respiração e mente para uma vida mais equilibrada.',
+        bg: cardBg('#2d1b4e', '#5c2a6e'), wa: wa('Olá! Tenho interesse em Ayurveda & Yoga na Casa Terapêutica Flor da Vida.') },
+      { name: 'Acompanhamento Terapêutico', short: 'Acompanhamento', icon: '✦',
+        desc: 'Suporte contínuo e personalizado ao longo da sua jornada de desenvolvimento e cura.',
+        bg: cardBg('#41205a', '#7a2f77'), wa: wa('Olá! Gostaria de saber mais sobre o Acompanhamento Terapêutico na Casa Terapêutica Flor da Vida.') },
+      { name: 'Biorressonância', short: 'Biorressonância', icon: '◉',
+        desc: 'Tecnologia reconhecida pelo Ministério da Saúde que avalia o equilíbrio energético do organismo.',
+        bg: cardBg('#361d52', '#a83d8f'), wa: wa('Olá! Quero agendar uma avaliação de Biorressonância na Casa Terapêutica Flor da Vida.') },
+    ];
+
+    const steps = [
+      { n: '1', title: 'Agende pelo WhatsApp', desc: 'Envie uma mensagem e escolha o melhor horário para você.' },
+      { n: '2', title: 'Sessão personalizada', desc: 'Você é acolhido em uma sessão pensada para o seu momento.' },
+      { n: '3', title: 'Acompanhamento contínuo', desc: 'Seguimos juntos na sua jornada de equilíbrio e cura.' },
+    ];
+
+    const reviews = [
+      { text: 'Ótimo atendimento, super recomendo', name: 'Jeferson Palacio' },
+      { text: 'Lugar que tem meu coração!!', name: 'Silvia Carvalho' },
+      { text: 'Uma experiência incrível', name: 'Silvia Carvalho' },
+    ];
+
+    const faqData = [
+      { q: 'O que é Reiki e como funciona?',
+        a: 'O Reiki é uma terapia energética japonesa de imposição de mãos. O terapeuta canaliza energia vital para promover relaxamento, alívio do estresse e equilíbrio. Você permanece vestido, deitado ou sentado, em um ambiente tranquilo.' },
+      { q: 'Preciso seguir alguma religião para fazer as terapias?',
+        a: 'Não. As terapias holísticas não estão ligadas a nenhuma religião. Pessoas de todas as crenças — ou nenhuma — são bem-vindas.' },
+      { q: 'Quanto tempo dura uma sessão?',
+        a: 'Em geral, entre 50 minutos e 1 hora, variando conforme a terapia e o plano definido junto com você na primeira conversa.' },
+      { q: 'O que é Biorressonância?',
+        a: 'É uma tecnologia de avaliação do equilíbrio energético do organismo, reconhecida pelo Ministério da Saúde, que auxilia na identificação de desequilíbrios e no direcionamento do cuidado.' },
+      { q: 'As terapias substituem tratamento médico?',
+        a: 'Não. As terapias holísticas são práticas integrativas e complementares — elas somam ao seu cuidado, mas não substituem acompanhamento médico ou psicológico.' },
+      { q: 'Como faço para agendar?',
+        a: 'Basta chamar no WhatsApp (55) 99207-3534. Respondemos rapidinho e encontramos juntos o melhor horário.' },
+    ];
+
+    const faqs = faqData.map((f, i) => ({
+      q: f.q, a: f.a,
+      open: this.state.openFaq === i,
+      mark: this.state.openFaq === i ? '−' : '+',
+      toggle: () => this.setState((s) => ({ openFaq: s.openFaq === i ? -1 : i })),
+    }));
+
+    const tiltMove = (e) => {
+      const card = e.currentTarget;
+      const r = card.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width - 0.5;
+      const y = (e.clientY - r.top) / r.height - 0.5;
+      card.style.transform = 'perspective(800px) rotateX(' + (-y * 6).toFixed(2) + 'deg) rotateY(' + (x * 6).toFixed(2) + 'deg) translateY(-4px)';
+      card.style.boxShadow = '0 18px 40px rgba(20,10,38,.5)';
+    };
+    const tiltLeave = (e) => {
+      e.currentTarget.style.transform = '';
+      e.currentTarget.style.boxShadow = '';
+    };
+
+    services.forEach((s, i) => { s.slotId = slotIds[i]; s.fade = fades[i]; });
+
+    return {
+      waHero: wa('Olá! Vim pelo site da Casa Terapêutica Flor da Vida e gostaria de agendar uma sessão.'),
+      services, steps, reviews, faqs,
+      tiltMove, tiltLeave,
+      flowerHero: this.flower('hero'),
+      flowerAbout: this.flower('about'),
+      showFloat: this.props.showFloatingWhatsApp ?? true,
+    };
+  }
+}
+</script>
+</body>
+</html>
